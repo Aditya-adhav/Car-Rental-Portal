@@ -1,0 +1,142 @@
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.header_widgets {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.circle_icon {
+    width: 40px;
+    height: 40px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.circle_icon i {
+    color: #333;
+    font-size: 16px;
+}
+
+.header_widgets p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.header_widgets a {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header_widgets a:hover {
+    color: red;
+}
+
+/* User Actions */
+.user-actions .btn {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.user-actions .btn:hover {
+    background-color: darkred;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: black;
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .user-actions {
+        margin-top: 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+}

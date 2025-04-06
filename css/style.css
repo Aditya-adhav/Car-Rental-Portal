@@ -1,0 +1,726 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Container for proper alignment */
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Alignment */
+.logo {
+    flex: 1; /* Pushes logo to the left */
+}
+
+/* Contact Info Centered */
+.contact-info {
+    display: flex;
+    flex: 2;
+    justify-content: center; /* Centers the contact info */
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contact Info Items */
+.header_widgets {
+    display: flex;
+    align-items: center;
+}
+
+.circle_icon {
+    width: 30px;
+    height: 30px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.circle_icon i {
+    color: #333;
+    font-size: 14px;
+}
+
+.header_widgets p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+}
+
+.header_widgets a {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* User Actions (Login Button) */
+.user-actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Aligns button to the right */
+}
+
+.user-actions .btn {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.user-actions .btn:hover {
+    background-color: darkred;
+}
+.login-section, .registration-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h1, .registration-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-section form, .registration-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-section label, .registration-section label {
+    font-weight: bold;
+    color: #555;
+}
+
+.login-section input, .registration-section input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-section button, .registration-section button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-section button:hover, .registration-section button:hover {
+    background-color: #555;
+}
+
+.login-section p, .registration-section p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-section a, .registration-section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-section a:hover, .registration-section a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
+.main-nav {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .user-actions {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('../images/banner-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+        height: 30vh; /* Full screen height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}     
+
+/* Car Listings */
+.car-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.car {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.car:hover {
+    transform: translateY(-5px);
+}
+
+.car img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.car-details h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.car-details p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}
+
+.view-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-btn:hover {
+    background: darkred;
+}
+* Filter Section */
+.filters {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.filters label {
+    font-weight: bold;
+    color: #555;
+    margin-right: 10px;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+.filters select:hover {
+    border-color: #007bff;
+}
+
+.filters select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.filters button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #0056b3;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .car-listings {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .car {
+        width: 90%;
+    }
+}
+/* Footer */
+/* Footer Styling */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 50px 0 20px;
+    font-size: 14px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* About Us Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links li a::before {
+    content: "›";
+    margin-right: 8px;
+    color: #ff4757;
+}
+
+.footer-links li a:hover {
+    color: #ff4757;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: #111;
+    padding: 15px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1500px;
+}
+
+/* Social Icons */
+.footer-bottom .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.footer-bottom .social-icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.footer-bottom .social-icons a:hover {
+    color: #ff4757;
+    transform: scale(1.2);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom .social-icons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff; /* Change color as needed */
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background: #0056b3;
+}
+
+.back-to-top.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Vehicle Details Section */
+.vehicle-details h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Vehicle Images */
+.vehicle-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.vehicle-images img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.vehicle-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Vehicle Info */
+.vehicle-info, .vehicle-features, .booking-section {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 8px;
+}
+
+.vehicle-info h2, .vehicle-features h2, .booking-section h2 {
+    font-size: 22px;
+    color: #444;
+    border-bottom: 3px solid #ff4757;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.vehicle-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Vehicle Features */
+.vehicle-features ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.vehicle-features li {
+    background: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Booking Section */
+.booking-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.booking-section label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+.booking-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.booking-section .btn {
+    background: #ff4757;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.booking-section .btn:hover {
+    background: #e84118;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vehicle-images img {
+        width: 140px;
+        height: 100px;
+    }
+
+    .vehicle-features ul {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .booking-section {
+        text-align: center;
+    }
+}
+
+
+/* Admin Panel Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-login-section, .add-brand-section, .add-car-section, .manage-bookings-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-login-section h1, .add-brand-section h1, .add-car-section h1, .manage-bookings-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.admin-login-section form, .add-brand-section form, .add-car-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-login-section label, .add-brand-section label, .add-car-section label {
+    font-weight: bold;
+    color: #555;
+}
+
+.admin-login-section input, .add-brand-section input, .add-car-section input, .add-car-section select, .add-car-section textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.admin-login-section button, .add-brand-section button, .add-car-section button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.admin-login-section button:hover, .add-brand-section button:hover, .add-car-section button:hover {
+    background-color: #555;
+}
+
+.manage-bookings-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.manage-bookings-section th, .manage-bookings-section td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.manage-bookings-section th {
+    background-color: #333;
+    color: #fff;
+}
+
+.manage-bookings-section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.manage-bookings-section a:hover {
+    text-decoration: underline;
+}
